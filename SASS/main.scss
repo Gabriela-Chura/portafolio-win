@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+$black-hunt: #141414; 
+$white-hunt: white;
+
+* {
+  margin:0;
+  padding:0;
+  outline:none;
+  list-style:none;
+  text-decoration:none;
+  box-sizing:border-box;
+  background: transparent;
+  border:none;
+}
+
+body {
+  background: $white-hunt;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*----------------------------nav----------------*/
+
+*{
+	outline: 1px solid red; 
+}
+
+.tapita{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.tto{
+	margin-top: 7px;
+}
+
+.section{
+	text-align:center;
+}
+
+#menu {
+    float: right;
+    margin-top: 5px;
+}
+#menu li {
+	display:inline-block;
+   	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+    text-decoration: none;
+	padding: 0 1.5em;
+  color: $black-hunt;
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+/*----------------------------SECTION0----------------*/
+.fondo {
+  background-image: url(../fotos/_MG_4787.JPG);
+  background-position: right;
+  background-size: cover;
+  color: black; }
+
+.frase {
+  padding: 190px 20px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif; }
+
+.tti {
+  font-family: 'Oswald', sans-serif; }
+
+
+/*--------------------------SOBRE MI ------------------*/
+ 
+
+.wrapper {
+  padding: 175px 0;
+ display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
+
+/*--------------------------SOBRE MI ------------------*/
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+
+@import 'portafolio';
+@import 'contacto';
