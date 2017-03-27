@@ -13,9 +13,9 @@
   border: none; }
 
 /*----------------------------nav----------------*/
-* {
-  outline: 1px solid red; }
-
+/**{
+	outline: 1px solid red; 
+}*/
 .tapita {
   z-index: 1;
   position: fixed;
@@ -301,47 +301,47 @@ section #services {
     animation-fill-mode: forwards; }
 @keyframes anim-text-flow-keys {
   0% {
-    color: #d05cd6; }
+    color: #d6685c; }
   5% {
-    color: #d65cca; }
+    color: #5cafd6; }
   10% {
-    color: #5cd66c; }
+    color: #d6ab5c; }
   15% {
-    color: #ced65c; }
+    color: #995cd6; }
   20% {
-    color: #5cd6bc; }
+    color: #d6ad5c; }
   25% {
-    color: #d65ccc; }
+    color: #cc5cd6; }
   30% {
-    color: #5c87d6; }
-  35% {
-    color: #d65cc0; }
-  40% {
-    color: #5cd6a7; }
-  45% {
-    color: #d6725c; }
-  50% {
-    color: #64d65c; }
-  55% {
-    color: #70d65c; }
-  60% {
-    color: #d65c9b; }
-  65% {
     color: #ab5cd6; }
+  35% {
+    color: #85d65c; }
+  40% {
+    color: #68d65c; }
+  45% {
+    color: #6cd65c; }
+  50% {
+    color: #5cd6a3; }
+  55% {
+    color: #78d65c; }
+  60% {
+    color: #5cd660; }
+  65% {
+    color: #5cd68d; }
   70% {
-    color: #745cd6; }
+    color: #bc5cd6; }
   75% {
-    color: #9d5cd6; }
+    color: #5cd6a1; }
   80% {
-    color: #d6645c; }
+    color: #d6bc5c; }
   85% {
-    color: #62d65c; }
+    color: #7a5cd6; }
   90% {
-    color: #5cd6c6; }
+    color: #5c64d6; }
   95% {
-    color: #5c87d6; }
+    color: #5cd674; }
   100% {
-    color: #d65caf; } }
+    color: #b15cd6; } }
   .anim-text-flow span:nth-of-type(1),
   .anim-text-flow-hover:hover span:nth-of-type(1) {
     animation-delay: -19.8s; }
