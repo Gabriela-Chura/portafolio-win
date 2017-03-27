@@ -62,6 +62,13 @@ $('.txt').html(function(i, html) {
   return '<span>' + chars.join('</span><span>') + '</span>';
 });
 	
+$(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});
 
-
+$('.nav-toggle').click(function() {
+		$('.inner').toggleClass('open');
+	});
 

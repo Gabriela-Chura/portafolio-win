@@ -8,7 +8,12 @@
   color: white;
   text-align: center;
   padding: 50px 0;
-  font-family: 'Fjalla One', sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+ @media screen and (max-width: $break-small) {
+     padding-top: 90px;
+     padding-bottom: 50px;
+  }
+}
 
 .boton2 {
   padding: 10px 10px;

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Lobster");
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +13,9 @@
   border: none; }
 
 /*----------------------------nav----------------*/
-/**{
-	outline: 1px solid red; 
-}*/
+* {
+  outline: 1px solid red; }
+
 .tapita {
   z-index: 1;
   position: fixed;
@@ -70,16 +71,25 @@
 
 /*----------------------------SECTION0----------------*/
 .fondo {
-  background-image: url(../fotos/_MG_4787.JPG);
+  background-image: url(../fotos/1994.png);
   background-position: right;
   background-size: cover;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .fondo {
+      background-position: center; } }
 
 .frase {
   padding: 190px 20px;
   text-align: left;
   font-size: 20px;
   font-family: 'Fjalla One', sans-serif; }
+  @media screen and (max-width: 480px) {
+    .frase {
+      background-color: rgba(67, 64, 64, 0.36);
+      padding: 300px 20px 0  20px;
+      height: 100%;
+      color: white; } }
 
 .tti {
   font-family: 'Fjalla One', sans-serif;
@@ -121,6 +131,10 @@
   text-align: center;
   padding: 50px 0;
   font-family: 'Fjalla One', sans-serif; }
+  @media screen and (max-width: 480px) {
+    .github {
+      padding-top: 90px;
+      padding-bottom: 50px; } }
 
 .boton2 {
   padding: 10px 10px;
@@ -216,7 +230,7 @@
 
 html, body {
   margin: 0;
-  background-color: #74d4b3; }
+  background-color: #272928; }
 
 section #services {
   text-align: center;
@@ -241,7 +255,7 @@ section #services {
     section #services li div {
       width: 120px;
       height: 120px;
-      color: #74d4b3;
+      color: #272928;
       font-size: 3.4em;
       text-align: center;
       line-height: 120px;
@@ -287,47 +301,47 @@ section #services {
     animation-fill-mode: forwards; }
 @keyframes anim-text-flow-keys {
   0% {
-    color: #5c91d6; }
+    color: #d05cd6; }
   5% {
-    color: #d65c74; }
-  10% {
-    color: #5c8dd6; }
-  15% {
-    color: #9bd65c; }
-  20% {
-    color: #d65ca9; }
-  25% {
-    color: #5c70d6; }
-  30% {
-    color: #5ca1d6; }
-  35% {
-    color: #5cd664; }
-  40% {
     color: #d65cca; }
+  10% {
+    color: #5cd66c; }
+  15% {
+    color: #ced65c; }
+  20% {
+    color: #5cd6bc; }
+  25% {
+    color: #d65ccc; }
+  30% {
+    color: #5c87d6; }
+  35% {
+    color: #d65cc0; }
+  40% {
+    color: #5cd6a7; }
   45% {
-    color: #d65c70; }
+    color: #d6725c; }
   50% {
-    color: #5cbcd6; }
+    color: #64d65c; }
   55% {
-    color: #9f5cd6; }
+    color: #70d65c; }
   60% {
-    color: #c4d65c; }
+    color: #d65c9b; }
   65% {
-    color: #5cd689; }
+    color: #ab5cd6; }
   70% {
-    color: #5cd685; }
+    color: #745cd6; }
   75% {
-    color: #d65c97; }
+    color: #9d5cd6; }
   80% {
-    color: #d6c85c; }
+    color: #d6645c; }
   85% {
-    color: #5cd67a; }
+    color: #62d65c; }
   90% {
-    color: #665cd6; }
+    color: #5cd6c6; }
   95% {
-    color: #5ca3d6; }
+    color: #5c87d6; }
   100% {
-    color: #5e5cd6; } }
+    color: #d65caf; } }
   .anim-text-flow span:nth-of-type(1),
   .anim-text-flow-hover:hover span:nth-of-type(1) {
     animation-delay: -19.8s; }
@@ -649,5 +663,36 @@ section #services {
 
 .txt {
   display: block; }
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #db3a34; }
+
+.bar {
+  width: 90%;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 2s linear; }
+
+.bar-1,
+.my-skills {
+  width: 80%;
+  margin: 10px auto 25px; }
+
+.bar-inner {
+  width: 0;
+  height: 35px;
+  line-height: 35px;
+  background: #db3a34;
+  border-radius: 5px 0 0 5px; }
+
+.bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

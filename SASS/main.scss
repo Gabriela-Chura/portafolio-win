@@ -19,9 +19,9 @@ $white-hunt: white;
 
 /*----------------------------nav----------------*/
 
-/**{
+*{
 	outline: 1px solid red; 
-}*/
+}
 
 .tapita{
     z-index: 1;
@@ -83,16 +83,30 @@ $white-hunt: white;
 }
 /*----------------------------SECTION0----------------*/
 .fondo {
-  background-image: url(../fotos/_MG_4787.JPG);
+  background-image: url(../fotos/1994.png);
   background-position: right;
   background-size: cover;
-  color: black; }
+  color: black; 
+ 
+    @media screen and (max-width: $break-small) {
+    background-position: center;
+  }
+}
+
 
 .frase {
   padding: 190px 20px;
   text-align: left;
 font-size: 20px;
-  font-family: 'Fjalla One', sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+ 
+ @media screen and (max-width: $break-small) {
+    background-color: rgba(67, 64, 64, 0.36);
+     padding: 300px 20px 0  20px;
+     height: 100%;
+    color: $white-hunt;
+  }
+}
 
 .tti {
   font-family: 'Fjalla One', sans-serif; 
@@ -141,3 +155,5 @@ font-size: 20px;
 @import 'portafolio';
 @import 'contacto';
 @import 'sobremi';
+@import 'skills';
+@import 'nav';
