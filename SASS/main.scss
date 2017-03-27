@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+
+$break-small: 480px;
+$break-large: 1200px;
 
 $black-hunt: #141414; 
 $white-hunt: white;
@@ -14,25 +17,23 @@ $white-hunt: white;
   border:none;
 }
 
-body {
-  background: $white-hunt;
-  font-family: 'Roboto', sans-serif;
-}
-
 /*----------------------------nav----------------*/
 
-*{
+/**{
 	outline: 1px solid red; 
-}
+}*/
 
 .tapita{
     z-index: 1;
     position: fixed;
     width: 100%;
+    background-color: $white-hunt;
 }
 
 .tto{
 	margin-top: 7px;
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
 }
 
 .section{
@@ -41,17 +42,21 @@ body {
 
 #menu {
     float: right;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'Lobster', cursive;
 }
+
+
 #menu li {
 	display:inline-block;
    	color: #000;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
+    padding: 5px;
 }
 #menu li.active{
 	background:#666;
-	background: rgba(0,0,0, 0.5);
+	background:$black-hunt;
 	color: #fff;
 }
 #menu li a{
@@ -86,20 +91,27 @@ body {
 .frase {
   padding: 190px 20px;
   text-align: left;
-  font-family: 'Open Sans', sans-serif; }
+font-size: 20px;
+  font-family: 'Fjalla One', sans-serif; }
 
 .tti {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Fjalla One', sans-serif; 
+ color: aqua;
+}
 
 
 /*--------------------------SOBRE MI ------------------*/
  
 
 .wrapper {
-  padding: 175px 0;
- display: block;
+  padding: 50px 0;
+  display: block;
   text-align: center;
   margin: 0 auto;
+  text-transform: uppercase;  
+    @media screen and (max-width: $break-small) {
+    padding: 50px 0;
+  }
 }
 
 .roles {
@@ -107,6 +119,9 @@ body {
     height: 50px;
     vertical-align: middle;
     overflow: hidden;
+    @media screen and (max-width: $break-small) {
+    font-size: 15px;
+  }
 }
 
 .roles div {
@@ -118,7 +133,11 @@ body {
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Lobster");
 
 @import 'portafolio';
 @import 'contacto';
+@import 'sobremi';
