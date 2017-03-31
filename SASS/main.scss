@@ -3,7 +3,7 @@
 $break-small: 480px;
 $break-large: 1200px;
 
-$black-hunt: #141414; 
+$black-hunt: #4a4a4a; 
 $white-hunt: white;
 
 * {
@@ -32,7 +32,7 @@ $white-hunt: white;
 
 .tto{
 	margin-top: 7px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 26px;
 }
 
@@ -43,19 +43,18 @@ $white-hunt: white;
 #menu {
     float: right;
     margin-bottom: 0px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 
 #menu li {
 	display:inline-block;
-   	color: #000;
+   	color: #5d5a5a;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
     padding: 5px;
 }
 #menu li.active{
-	background:#666;
 	background:$black-hunt;
 	color: #fff;
 }
@@ -95,23 +94,24 @@ $white-hunt: white;
 
 
 .frase {
-  padding: 190px 20px;
-  text-align: left;
-font-size: 20px;
-  font-family: 'Fjalla One', sans-serif;
+  padding: 50px 20px;
+color: $white-hunt;
+  background-color: rgba(10, 10, 10, 0.33);
+  text-align: center;
+ font-weight: bold;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
  
  @media screen and (max-width: $break-small) {
     background-color: rgba(67, 64, 64, 0.36);
      padding: 300px 20px 0  20px;
      height: 100%;
+     font-size: 20px;
     color: $white-hunt;
   }
 }
 
-.tti {
-  font-family: 'Fjalla One', sans-serif; 
- color: aqua;
-}
+
 
 
 /*--------------------------SOBRE MI ------------------*/
@@ -150,7 +150,7 @@ font-size: 20px;
 
 
 
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald" );
 
 @import 'portafolio';
 @import 'contacto';
